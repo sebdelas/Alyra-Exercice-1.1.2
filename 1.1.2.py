@@ -6,11 +6,11 @@ def recherche(saisie, borneMin, borneMax):
        return nb;
    if (nb > saisie):
        if (nb < borneMax):
-          borneMax = nb
+          borneMax = nb - 1
        return recherche(saisie, borneMin, borneMax)
    else:
        if (nb > borneMin):
-          borneMin = nb
+          borneMin = nb + 1
        return recherche(saisie, borneMin, borneMax)
 
 saisie = int(input("Saisissez un nombre entre 1 et 100, le programme va tenter de le trouver : "))
